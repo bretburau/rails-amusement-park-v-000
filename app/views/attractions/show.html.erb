@@ -1,0 +1,7 @@
+<%= @attraction.name %>
+<%= @attraction.min_height %>
+<%= @attraction.tickets %>
+<%= @attraction.nausea_rating %>
+<%= @attraction.happiness_rating %>
+<%= button_to "Go on this ride", ride_path(@attraction) %>
+<%= link_to "Edit Attraction", edit_attraction_path(@attraction) unless @user.admin == false %>
